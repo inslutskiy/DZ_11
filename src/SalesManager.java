@@ -14,4 +14,32 @@ public class SalesManager {
         }
         return max;
     }
+
+    public int stat() {
+        int max = 0;
+        int min = sales[0];
+        int soum = 0;
+        int stats;
+
+        for (int sale : sales) {
+            if (sale > max) {
+                max = sale;
+            }
+        }
+
+        for (int sale : sales) {
+            if (sale < min) {
+                min = sale;
+            }
+        }
+
+        for (int a = 0; a  < sales.length; a++) {
+            int p = sales[a];
+            soum += p;
+        }
+
+        stats = (soum - min - max) / (sales.length - 2);
+
+        return stats;
+    }
 }

@@ -5,5 +5,8 @@ public class Main {
         SalesManager manager = new SalesManager(a);
 
         System.out.println(manager.max());
+
+        System.out.println(manager.stat());
+
     }
 }
