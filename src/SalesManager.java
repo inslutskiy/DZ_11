@@ -33,8 +33,8 @@ public class SalesManager {
             }
         }
 
-        for (int a = 0; a  < sales.length; a++) {
-            int p = sales[a];
+        for (int i = 0; i  < sales.length; i++) {
+            int p = sales[i];
             soum += p;
         }
 
